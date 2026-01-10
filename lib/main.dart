@@ -9,7 +9,8 @@ import 'package:flutter/material.dart';
 // import 'package:project_1/views/columnPage.dart';
 // import 'package:project_1/views/columnrowPage.dart';
 // import 'package:project_1/views/counterPage.dart';
-import 'package:project_1/views/mappingList.dart';
+// import 'package:project_1/views/mappingList.dart';
+import 'package:project_1/views/dateFormat.dart';
 
 void main() {
   runApp(MyApp());
@@ -27,7 +28,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const MappingList(),
+      home: const Dateformating(),
     );
   }
 }
