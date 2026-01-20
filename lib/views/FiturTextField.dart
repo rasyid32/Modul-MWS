@@ -39,6 +39,8 @@ class FiturTextField extends StatelessWidget {
               ),
 
               decoration: InputDecoration(
+                fillColor: Colors.amber,
+                filled: true,
                 icon: Icon(Icons.person, size: 35,),
                 border: OutlineInputBorder(),
                 focusedBorder: OutlineInputBorder(
@@ -49,16 +51,20 @@ class FiturTextField extends StatelessWidget {
                 ),
                 enabledBorder: OutlineInputBorder(
                   borderSide: BorderSide(
-                    color: Colors.grey,
+                    color: Colors.red,
                     width: 2,
                   ),
                 ),
-                // prefixIcon: Icon(
-                //   Icons.person_add,
-                //   size: 35,
-                // ),
+                prefixIcon: Icon(
+                  Icons.person_add,
+                  size: 30,
+                ),
+                suffixIcon: Icon(
+                  Icons.check_circle,
+                  size: 30,
+                ),
                 // prefixText: "Nama : ",
-                // prefix: Icon(Icons.person, size: 35,)\
+                // prefix: Icon(Icons.person, size: 35,)
                 hintText: "Masukkan Nama Anda",
                 hintStyle: TextStyle(
                   color: Colors.grey,
