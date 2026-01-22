@@ -13,7 +13,8 @@ import 'package:flutter/material.dart';
 // import 'package:project_1/views/dateFormat.dart';
 // import 'package:project_1/views/appbarWidget.dart';
 // import 'package:project_1/views/tabBarWidget.dart';
-import 'package:project_1/views/FiturTextField.dart';
+// import 'package:project_1/views/FiturTextField.dart';
+import 'package:project_1/views/penggunaanTextField.dart';
 
 void main() {
   runApp(MyApp());
@@ -31,7 +32,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: FiturTextField(),
+      home: PenggunaanTextField(),
     );
   }
 }
