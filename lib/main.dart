@@ -14,7 +14,8 @@ import 'package:flutter/material.dart';
 // import 'package:project_1/views/appbarWidget.dart';
 // import 'package:project_1/views/tabBarWidget.dart';
 // import 'package:project_1/views/FiturTextField.dart';
-import 'package:project_1/views/penggunaanTextField.dart';
+// import 'package:project_1/views/penggunaanTextField.dart';
+import 'package:project_1/views/gridView.dart';
 
 void main() {
   runApp(MyApp());
@@ -32,7 +33,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: PenggunaanTextField(),
+      home: GridviewTutor(),
     );
   }
 }
