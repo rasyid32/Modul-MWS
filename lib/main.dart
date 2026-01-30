@@ -16,7 +16,8 @@ import 'package:flutter/material.dart';
 // import 'package:project_1/views/FiturTextField.dart';
 // import 'package:project_1/views/penggunaanTextField.dart';
 // import 'package:project_1/views/gridView.dart';
-import 'package:project_1/views/dialog.dart';
+// import 'package:project_1/views/dialog.dart';
+import 'package:project_1/views/dismissiblee.dart';
 
 void main() {
   runApp(MyApp());
@@ -34,7 +35,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: DialogTutor(),
+      home: Dismis(),
     );
   }
 }
