@@ -5,7 +5,7 @@ class PageDua extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Page Dua"),
+        title: Text("Page Dua navigation"),
       ),
       body: Center(
         child: Text("INI PAGE SATU", 
