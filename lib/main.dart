@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:project_1/views/navigation/pageSatu.dart';
+import 'package:project_1/views/navigation/galleryPage.dart';
+import 'package:project_1/views/navigation/homePage.dart';
+import 'package:project_1/views/navigation/photoPage.dart';
+// import 'package:project_1/views/navigation/pageSatu.dart';
 // import 'package:project_1/views/home_page.dart';
 // import 'package:project_1/views/centerpage.dart';
 // import 'package:project_1/views/sizedbox.dart';
@@ -36,7 +39,13 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: PageSatu(),
+      home: HomePage(),
+      initialRoute: HomePage.routeName,
+      routes: {
+        HomePage.routeName: (context) => HomePage(),
+        GalleryPage.routeName: (context) => GalleryPage(),
+        PhotoPage.routeName: (context) => PhotoPage(),
+      },
     );
   }
 }
