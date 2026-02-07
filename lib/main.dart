@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:project_1/views/drawer.dart';
 import 'package:project_1/views/navigation/galleryPage.dart';
 import 'package:project_1/views/navigation/homePage.dart';
 import 'package:project_1/views/navigation/photoPage.dart';
@@ -39,7 +40,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: HomePage(),
+      home: DrawerTutorial(),
       initialRoute: HomePage.routeName,
       routes: {
         HomePage.routeName: (context) => HomePage(),

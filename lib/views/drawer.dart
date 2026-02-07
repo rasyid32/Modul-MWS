@@ -1,34 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:project_1/views/navigation/pageDua.dart';
+import 'package:project_1/views/navigation/pageSatu.dart';
 
-class PageSatu extends StatelessWidget {
+class DrawerTutorial extends StatelessWidget {
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Page satu navigation"),
+        title: Text("Drawer Tutorial"),
       ),
-      body: Center(
-        child: Text("INI PAGE SATU", 
-        style: TextStyle(
-          fontSize: 50
-          ),
-        ),
-      ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: (){
-          Navigator.of(context).push(
-            MaterialPageRoute(
-              builder: (context) {
-                return PageDua();
-              },
-            )
-          );
-        },
-        child: Icon(Icons.keyboard_arrow_right),
-        ),
-        floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
-        drawer: Drawer(
+      drawer: Drawer(
         child: Column(
           children: [
             Container(
@@ -79,6 +61,9 @@ class PageSatu extends StatelessWidget {
             ),
           ],
         ),
+      ),
+      body: Center(
+        child: Text("Drawer Tutorial", style: TextStyle(fontSize: 50),),
       ),
     );
   }
