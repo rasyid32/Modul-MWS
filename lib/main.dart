@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:project_1/views/drawer.dart';
+// import 'package:project_1/views/drawer.dart';
 import 'package:project_1/views/navigation/galleryPage.dart';
 import 'package:project_1/views/navigation/homePage.dart';
 import 'package:project_1/views/navigation/photoPage.dart';
+import 'package:project_1/views/switch.dart';
 // import 'package:project_1/views/navigation/pageSatu.dart';
 // import 'package:project_1/views/home_page.dart';
 // import 'package:project_1/views/centerpage.dart';
@@ -40,8 +41,8 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: DrawerTutorial(),
-      initialRoute: HomePage.routeName,
+      home: SwitchTutorial(),
+      // initialRoute: HomePage.routeName,
       routes: {
         HomePage.routeName: (context) => HomePage(),
         GalleryPage.routeName: (context) => GalleryPage(),
